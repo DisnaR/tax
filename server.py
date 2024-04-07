@@ -8,7 +8,7 @@ from datetime import datetime  # Importa a classe datetime para trabalhar com da
 def insert_into_database(data):
     # Estabelece conexão com o banco de dados SQL Server
     conn = pyodbc.connect('Driver={SQL Server};'
-                          'Server=DISNAR\SQLEXPRESS;'
+                          'Server=DISNAR\\SQLEXPRESS;'
                           'Database=master;'
                           'Trusted_Connection=yes;')
 
