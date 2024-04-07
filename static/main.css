@@ -1,0 +1,101 @@
+/* Definições de fonte */
+body {
+    font-family: 'Unilever Shilling', sans-serif;
+}
+
+/* Estilização para a div contendo o logo */
+#logo {
+    width: 100%; /* Define a largura da div como 100% da largura da página */
+    margin: 0 auto; /* Centraliza a div horizontalmente */
+}
+
+/* Estilo para a imagem do logo */
+#logo img {
+    max-width: 100%; /* Define a largura máxima da imagem como 100% */
+    height: auto; /* Mantém a proporção da imagem */
+    display: block; /* Torna a imagem um bloco para permitir a aplicação de margens */
+    margin: 0 auto; /* Centraliza a imagem horizontalmente */
+}
+
+/* Estilização para o formulário */
+#formulario {
+    width: 100%; /* Define a largura da div como 100% da largura da página */
+    margin: 0 auto; /* Centraliza a div horizontalmente */
+    max-width: 600px; /* Define uma largura máxima para o formulário */
+    padding: 0 20px; /* Adiciona um preenchimento interno */
+    box-sizing: border-box; /* Inclui padding e borda na largura total */
+}
+
+/* Estilo para o título do formulário */
+h2 {
+    text-align: center; /* Centraliza o texto horizontalmente */
+}
+
+/* Estilização para as colunas */
+.colunas {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+/* Estilização para as colunas */
+.coluna {
+    flex: 1;
+    margin-right: 20px; /* Adiciona espaçamento entre as colunas */
+}
+
+/* Estilização específica para a coluna de mensagem */
+.mensagem {
+    flex: 2; /* Define uma largura maior para a coluna de mensagem */
+}
+
+/* Estilização para os labels */
+label {
+    display: block; /* Faz com que os labels ocupem uma linha inteira */
+    margin-bottom: 5px; /* Adiciona espaçamento entre os labels */
+}
+
+/* Estilização para os inputs, selects e textarea */
+input[type="text"],
+input[type="email"],
+select,
+textarea {
+    width: 100%; /* Garante que os inputs, selects e textarea ocupem toda a largura da coluna */
+    padding: 5px;
+    margin-bottom: 10px; /* Adiciona espaçamento entre os inputs, selects e textarea */
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box; /* Garante que o padding não aumente a largura dos inputs */
+}
+
+/* Estilização para o botão */
+button {
+    width: 100%; /* Faz o botão ocupar toda a largura disponível */
+    background-color: #020951;
+    color: #ffffff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+/* Efeito de hover para o botão */
+button:hover {
+    background-color: #2f3fe7;
+    color: #fff;
+    border: 1px solid #020951;
+}
+
+/* Mídia para telas menores que 768px (tablet) */
+@media (max-width: 768px) {
+    #formulario {
+        padding: 0 10px; /* Reduz o preenchimento interno */
+    }
+    .coluna {
+        flex: 100%; /* Define as colunas para ocupar 100% da largura disponível */
+        margin-right: 0; /* Remove a margem direita */
+    }
+    .mensagem {
+        flex: 100%; /* Define a coluna de mensagem para ocupar 100% da largura disponível */
+    }
+}

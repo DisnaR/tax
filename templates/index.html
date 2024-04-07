@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário de Contato</title>
+    <link rel="stylesheet" type="text/css" href="../static/main.css"> <!-- Caminho relativo para o arquivo CSS -->
+</head>
+<body>
+    <div id="logo">
+        <img src="../Imagens/Logo_Unilever.jpeg" alt="Logo Unilever"> <!-- Caminho relativo para a imagem do logo -->
+    </div>
+
+    <div id="formulario">    
+        <h2>Formulário de Contato</h2>
+        <form action="/" method="post" enctype="multipart/form-data">
+            <div class="colunas">
+                <div class="coluna">
+                    <label for="nome">Nome:</label> <!-- Campo para inserir o nome -->
+                    <input type="text" id="nome" name="nome" required> <!-- Entrada de texto para o nome -->
+                </div>
+                <div class="coluna">
+                    <label for="email">E-mail:</label> <!-- Campo para inserir o e-mail -->
+                    <input type="email" id="email" name="email" required> <!-- Entrada de texto para o e-mail -->
+                </div>
+                <div class="coluna">
+                    <label for="departamento">Departamento:</label> <!-- Campo para selecionar o departamento -->
+                    <select id="departamento" name="departamento" required> <!-- Menu suspenso para selecionar o departamento -->
+                        <option value="Vendas">Vendas</option>
+                        <option value="Suporte">Suporte</option>
+                        <option value="Financeiro">Financeiro</option>
+                        <option value="RH">Recursos Humanos</option>
+                    </select>
+                </div>
+            </div>
+            <div class="colunas">
+                <div class="coluna mensagem">
+                    <label for="mensagem">Mensagem:</label> <!-- Campo para inserir a mensagem -->
+                    <textarea id="mensagem" name="mensagem" rows="6" required></textarea> <!-- Campo de texto para a mensagem -->
+                </div>
+                <div class="coluna">
+                    <label for="anexo">Anexo:</label> <!-- Campo para selecionar um arquivo para anexo -->
+                    <input type="file" id="anexo" name="anexo"> <!-- Botão para selecionar um arquivo -->
+                </div>
+            </div>
+            <div class="coluna">
+                <button type="submit">Enviar</button> <!-- Botão para enviar o formulário -->
+            </div>
+        </form>
+    </div>
+</body>
+</html>
